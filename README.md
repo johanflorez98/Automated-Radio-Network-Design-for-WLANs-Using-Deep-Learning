@@ -5,7 +5,7 @@ Algunos referentes importantes para el desarrollo de esta investigación fueron 
 
 #### Estructura general de la base de datos creada.
 
-Una gran díficultad inicial para el incio de la investigación, fue la falta de datos, en este caso, escenarios, mapas de cobertura y de celdas de interiores, para el entrenamiento de la estructura [UNet](https://arxiv.org/abs/1505.04597). Por lo que fue necesario realizar la creación de una base de datos adecuada, que diera lugar a los respectivos entrenamientos. Así mismo, se realiza el aporte de los 
+Una gran díficultad inicial para el incio de la investigación, fue la falta de datos, en este caso, escenarios, mapas de cobertura y de celdas de interiores, para el entrenamiento de la estructura [UNet](https://arxiv.org/abs/1505.04597). Por lo que fue necesario realizar la creación de una base de datos adecuada, que diera lugar a los respectivos entrenamientos. Dichos mapas de cobertura, se generaron utilizando el modelo [WiFi IEEE](https://docs.google.com/document/d/1VJUFapbVnzFj-qn579-kmU9bmihQ3jK8/edit?usp=sharing&ouid=107745088877361669425&rtpof=true&sd=true)
 
 Es por lo anterior, que la presente investigación, aporta una [base datos](https://drive.google.com/drive/folders/17ann1zRG3JtVQTSib1voEYGlmOFDSOTR?usp=sharing) que puede ser usada para el entrenamiento de múltiples arquitecturas de Deep Learning y con ella se podrían llevar a cabo investigaciones futuras de problemas similares.
 
