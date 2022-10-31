@@ -1,4 +1,4 @@
-# Estimación-Rápida-de-Mapas-de-Radio-en-Escenarios-Interiores-Usando-Deep-Learning.
+# Estimación Rápida de Mapas de Radio en Escenarios Interiores Usando Deep Learning.
 En esta investigación, se presenta la arquitectura de Deep Learning [UNet](https://arxiv.org/abs/1505.04597) para la estimación rápida de mapas de radio en escenarios interiores. Esta arquitectura fue implementada para estructuras WLAN conformadas por 1, 2 y 3 puntos de acceso, la cual tiene la capacidad de realizar estimaciones de los mapas de cobertura, de forma similar que un simulador físico, pero de forma rápida. De la misma manera, tiene la capacidad de estimar los respectivos mapas de celdas, para las estructuras descritas.
 
 Algunos referentes importantes para el desarrollo de esta investigación fueron [RadioUNet](https://github.com/RonLevie/RadioUNet), que es una aplicación para estimar la pérdida de trayectoria de propagación en escenarios exteriores y el presente repositorio sobre [fundamentos de Deep Learning](https://github.com/JACantoral/DL_fundamentals).
