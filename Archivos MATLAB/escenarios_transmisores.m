@@ -1,7 +1,6 @@
-clear
-
 %% Generación de las ubicaciones de los AP ********************************
 
+clear
 close all
 clc
 
