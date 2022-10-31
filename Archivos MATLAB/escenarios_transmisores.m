@@ -21,8 +21,8 @@ while pos1 <= pos && esc <= cant_esc
 
     % Lectura del plano actual
     if pos1 == 1
-        % Las imagenes que se leen como escenarios, son imágenes RGB
-        % en las cuales las paredes se representan on píxeles en negro y e
+        % En las imagenes que se leen como escenarios, 
+        % las paredes se representan on píxeles en negro y e
         % resto de la misma con píxeles en blanco.
         % (La ruta establecida se debe cambiar según la posición en la que se encuentren los planos de los escenarios)
         plano = imread("C:\Users\giiee\Desktop\Trabajo 2 CV Maestria\DataSet\datasetUNet\Escenarios_blanco_RGB\" + string(esc) + '.JPG'); % Plano inicial
