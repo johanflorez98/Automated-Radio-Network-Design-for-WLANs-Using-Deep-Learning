@@ -110,5 +110,7 @@ end
 
 % Se guardan las posiciones de los APs para cualquier uso posterior que se
 % requiera:
-% (La ruta establecida se debe cambiar según la posición en la que se deseen alamacenar las posicones de los transmisores)
+% (La ruta establecida se debe cambiar según la posición en la que se deseen alamacenar las posicones de los transmisores.
+% Finalmente es importante mencionar que las imágenes tienen una resolución de 256 px x 256 px y que las posiciones almacenadas
+% para cada caso de 1, 2 y 3 transmisores se guarda con coordenadas en píxeles.)
 save("C:\Users\giiee\Desktop\Trabajo 2 CV Maestria\DataSet\datasetUNet\Pos_Transmisores_f\3AP\pos_AP_esc.mat", 'pos_AP_esc');
