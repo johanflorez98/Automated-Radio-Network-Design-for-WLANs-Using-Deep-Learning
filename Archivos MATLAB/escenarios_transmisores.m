@@ -45,31 +45,31 @@ while pos1 <= pos && esc <= cant_esc
         end
         
         % Se aseguran las paredes de los lados:
-        plano1(1,:) = 255;
-        plano1(tam(1),:) = 255;
+        plano1(1, :) = 255;
+        plano1(tam(1), :) = 255;
         
-        plano1(:,1) = 255;
-        plano1(:,tam(2)) = 255;
+        plano1(:, 1) = 255;
+        plano1(:, tam(2)) = 255;
         
         % Se muestra y se guarda el plano procesado:
         figure(1)
         imshow(plano1)
         % (La ruta establecida se debe cambiar según la posición en la que se desee alamacenar la misma)
-        imwrite(plano1,"C:\Users\giiee\Desktop\Trabajo 2 CV Maestria\DataSet\datasetUNet\Escenarios_f\" + string(esc) + '.png')
+        imwrite(plano1, "C:\Users\giiee\Desktop\Trabajo 2 CV Maestria\DataSet\datasetUNet\Escenarios_f\" + string(esc) + '.png')
     end
 
     % Ubicación de AP de forma aleatoria, se dejan 10 px de margen respecto
     % a los bordes de cad imagen:
-    apx = randi([0+10 tam(1)-10],1,cant_AP);
-    apy = randi([0+10 tam(2)-10],1,cant_AP);
+    apx = randi([0+10 tam(1)-10], 1, cant_AP);
+    apy = randi([0+10 tam(2)-10], 1, cant_AP);
     
     AP = [apx' apy'];
     
     % Creación de la matriz de los transmisores:
-    antenas = zeros(tam(1),tam(2));
+    antenas = zeros(tam(1), tam(2));
     
     for i = 1:length(apx)
-        antenas(apx(i),apy(i)) = 255;
+        antenas(apx(i), apy(i)) = 255;
     end
 
     % Se reubican los AP si se encuentran sobre las paredes ***************
@@ -77,29 +77,29 @@ while pos1 <= pos && esc <= cant_esc
     for k = 1:cant_AP
         for i = 1:tam(1)
             for j = 1:tam(2)
-                if plano1(i,j) == 255 && AP(k,1) == i && AP(k,2) == j
-                    AP(k,1) = AP(k,1) + 5;
-                    AP(k,2) = AP(k,2) + 5;
+                if plano1(i, j) == 255 && AP(k, 1) == i && AP(k, 2) == j
+                    AP(k, 1) = AP(k, 1) + 5;
+                    AP(k, 2) = AP(k, 2) + 5;
                 end
             end
         end
     end
     
     % Se actualizan las posiciones de los AP
-    antenas = zeros(tam(1),tam(2));
+    antenas = zeros(tam(1), tam(2));
     
     for i=1:length(apx)
-        antenas(AP(i,1),AP(i,2)) = 255;
+        antenas(AP(i, 1), AP(i, 2)) = 255;
     end
     
     % Se muestran y se guardan las posiciones de los transmisores
     figure(2)
     imshow(antenas)
     % (La ruta establecida se debe cambiar según la posición en la que se desee alamacenar la misma)
-    imwrite(antenas,"C:\Users\giiee\Desktop\Trabajo 2 CV Maestria\DataSet\datasetUNet\Pos_Transmisores_f\3AP\" + string(esc) + '_'+string(pos1) + '.png')
+    imwrite(antenas, "C:\Users\giiee\Desktop\Trabajo 2 CV Maestria\DataSet\datasetUNet\Pos_Transmisores_f\3AP\" + string(esc) + '_'+string(pos1) + '.png')
 
     % Se almacenan las ubicaciones (x,y) de los AP por escenario **********
-    pos_AP_esc(:,:,pos1,esc) = AP; % (x,y,posicion_AP,escenario)
+    pos_AP_esc(:, :, pos1, esc) = AP; % (x,y,posicion_AP,escenario)
     pos1 = pos1 + 1;
     if pos1 == pos + 1
         pos1 = 1;
