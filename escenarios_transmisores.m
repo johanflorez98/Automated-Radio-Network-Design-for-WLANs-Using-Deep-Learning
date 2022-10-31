@@ -25,6 +25,7 @@ while pos1 <= pos && esc <= cant_esc
         % Las imagenes que se leen como escenarios, son imágenes RGB
         % en las cuales las paredes se representan on píxeles en negro y e
         % resto de la misma con píxeles en blanco.
+        % (La ruta establecida se debe cambiar según la posición en la que se encuentren los planos de los escenarios)
         plano = imread("C:\Users\giiee\Desktop\Trabajo 2 CV Maestria\DataSet\datasetUNet\Escenarios_blanco_RGB\" + string(esc) + '.JPG'); % Plano inicial
         tam = size(plano); % Tamaño de los escenarios
         
@@ -54,6 +55,7 @@ while pos1 <= pos && esc <= cant_esc
         % Se muestra y se guarda el plano procesado:
         figure(1)
         imshow(plano1)
+        % (La ruta establecida se debe cambiar según la posición en la que se desee alamacenar la misma)
         imwrite(plano1,"C:\Users\giiee\Desktop\Trabajo 2 CV Maestria\DataSet\datasetUNet\Escenarios_f\" + string(esc) + '.png')
     end
 
@@ -94,6 +96,7 @@ while pos1 <= pos && esc <= cant_esc
     % Se muestran y se guardan las posiciones de los transmisores
     figure(2)
     imshow(antenas)
+    % (La ruta establecida se debe cambiar según la posición en la que se desee alamacenar la misma)
     imwrite(antenas,"C:\Users\giiee\Desktop\Trabajo 2 CV Maestria\DataSet\datasetUNet\Pos_Transmisores_f\3AP\" + string(esc) + '_'+string(pos1) + '.png')
 
     % Se almacenan las ubicaciones (x,y) de los AP por escenario **********
@@ -108,4 +111,5 @@ end
 
 % Se guardan las posiciones de los APs para cualquier uso posterior que se
 % requiera:
+% (La ruta establecida se debe cambiar según la posición en la que se deseen alamacenar las posicones de los transmisores)
 save("C:\Users\giiee\Desktop\Trabajo 2 CV Maestria\DataSet\datasetUNet\Pos_Transmisores_f\3AP\pos_AP_esc.mat", 'pos_AP_esc');
