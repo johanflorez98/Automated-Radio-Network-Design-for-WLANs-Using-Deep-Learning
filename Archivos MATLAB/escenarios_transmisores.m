@@ -25,7 +25,9 @@ while pos1 <= pos && esc <= cant_esc
         % las paredes se representan on píxeles en negro y e
         % resto de la misma con píxeles en blanco.
         % (La ruta establecida se debe cambiar según la posición en la que se encuentren los planos de los escenarios)
-        plano = imread("C:\Users\giiee\Desktop\Trabajo 2 CV Maestria\DataSet\datasetUNet\Escenarios_blanco_RGB\" + string(esc) + '.JPG'); % Plano inicial
+        % Esta es la ruta de la carpeta en la que se encuentran los planos de los escenarios:
+        ruta = ""
+        plano = imread(ruta + string(esc) + '.JPG'); % Plano inicial
         tam = size(plano); % Tamaño de los escenarios
         
         % Adecuación del plano ********************************************
@@ -55,7 +57,9 @@ while pos1 <= pos && esc <= cant_esc
         figure(1)
         imshow(plano1)
         % (La ruta establecida se debe cambiar según la posición en la que se desee alamacenar la misma)
-        imwrite(plano1, "C:\Users\giiee\Desktop\Trabajo 2 CV Maestria\DataSet\datasetUNet\Escenarios_f\" + string(esc) + '.png')
+        % Esta es la ruta de la carpeta en la que se desean guardar las nuevas imágenes de los escenarios:
+        ruta = ""
+        imwrite(plano1, ruta + string(esc) + '.png')
     end
 
     % Ubicación de AP de forma aleatoria, se dejan 10 px de margen respecto
@@ -96,7 +100,9 @@ while pos1 <= pos && esc <= cant_esc
     figure(2)
     imshow(antenas)
     % (La ruta establecida se debe cambiar según la posición en la que se desee alamacenar la misma)
-    imwrite(antenas, "C:\Users\giiee\Desktop\Trabajo 2 CV Maestria\DataSet\datasetUNet\Pos_Transmisores_f\3AP\" + string(esc) + '_'+string(pos1) + '.png')
+    % Esta es la ruta de la carpeta en la que se desean guardar las imágenes de las posiciones de los transmisores:
+    ruta = ""
+    imwrite(antenas, ruta + string(esc) + '_'+string(pos1) + '.png')
 
     % Se almacenan las ubicaciones (x,y) de los AP por escenario **********
     pos_AP_esc(:, :, pos1, esc) = AP; % (x,y,posicion_AP,escenario)
@@ -113,4 +119,6 @@ end
 % (La ruta establecida se debe cambiar según la posición en la que se deseen alamacenar las posicones de los transmisores.
 % Finalmente es importante mencionar que las imágenes tienen una resolución de 256 px x 256 px y que las posiciones almacenadas
 % para cada caso de 1, 2 y 3 transmisores se guarda con coordenadas en píxeles.)
-save("C:\Users\giiee\Desktop\Trabajo 2 CV Maestria\DataSet\datasetUNet\Pos_Transmisores_f\3AP\pos_AP_esc.mat", 'pos_AP_esc');
+% Esta es la ruta en la que se desea guardar las posiciones de los transmisores:
+ruta = ""
+save(ruta, 'pos_AP_esc');
