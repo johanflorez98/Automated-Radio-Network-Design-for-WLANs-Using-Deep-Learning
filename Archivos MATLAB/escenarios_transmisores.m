@@ -26,7 +26,7 @@ while pos1 <= pos && esc <= cant_esc
         % resto de la misma con píxeles en blanco.
         % (La ruta establecida se debe cambiar según la posición en la que se encuentren los planos de los escenarios)
         % Esta es la ruta de la carpeta en la que se encuentran los planos de los escenarios:
-        ruta = ""
+        ruta = "" % #######################################################
         plano = imread(ruta + string(esc) + '.JPG'); % Plano inicial
         tam = size(plano); % Tamaño de los escenarios
         
@@ -58,7 +58,7 @@ while pos1 <= pos && esc <= cant_esc
         imshow(plano1)
         % (La ruta establecida se debe cambiar según la posición en la que se desee alamacenar la misma)
         % Esta es la ruta de la carpeta en la que se desean guardar las nuevas imágenes de los escenarios:
-        ruta = ""
+        ruta = "" % #######################################################
         imwrite(plano1, ruta + string(esc) + '.png')
     end
 
@@ -101,7 +101,7 @@ while pos1 <= pos && esc <= cant_esc
     imshow(antenas)
     % (La ruta establecida se debe cambiar según la posición en la que se desee alamacenar la misma)
     % Esta es la ruta de la carpeta en la que se desean guardar las imágenes de las posiciones de los transmisores:
-    ruta = ""
+    ruta = "" % #######################################################
     imwrite(antenas, ruta + string(esc) + '_'+string(pos1) + '.png')
 
     % Se almacenan las ubicaciones (x,y) de los AP por escenario **********
@@ -120,5 +120,5 @@ end
 % Finalmente es importante mencionar que las imágenes tienen una resolución de 256 px x 256 px y que las posiciones almacenadas
 % para cada caso de 1, 2 y 3 transmisores se guarda con coordenadas en píxeles.)
 % Esta es la ruta en la que se desea guardar las posiciones de los transmisores:
-ruta = ""
+ruta = "" % #######################################################
 save(ruta, 'pos_AP_esc');
