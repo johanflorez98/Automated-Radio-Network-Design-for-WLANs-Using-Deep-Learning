@@ -3,7 +3,7 @@ En esta investigación, se presenta la arquitectura de Deep Learning [UNet](http
 
 Un punto de referencia importante en el estado del arte fue [RadioUNet](https://github.com/RonLevie/RadioUNet), que es una aplicación para estimar la pérdida de trayectoria de propagación en escenarios exteriores.
 
-#### Estructura general de la base de datos creada.
+### Estructura general de la base de datos creada.
 
 Una gran díficultad inicial para el incio de la investigación, fue la falta de datos, en este caso, escenarios, mapas de cobertura y de celdas de interiores, para el entrenamiento de la estructura [UNet](https://arxiv.org/abs/1505.04597). Por lo que fue necesario realizar la creación de una base de datos adecuada, que diera lugar a los respectivos entrenamientos. Dichos mapas de cobertura, se generaron utilizando el modelo [WiFi IEEE](https://mentor.ieee.org/802.11/dcn/03/11-03-0940-04-000n-tgn-channel-models.doc). Dicha implementación se realizó en el software MATLAB y se dejan a disposición los [códigos](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/tree/main/Archivos%20MATLAB).
 
@@ -33,10 +33,30 @@ En el mismo sentido, se generaron 1000 imágenes de mapas de celdas para los cas
 
 Finalmente, se logró la conformación de una base de datos con 110000 imagénes a ser utilizadas como entradas y salidas de la arquitectura.
 
-#### Visualización de algunas imágenes que conforman la base de datos
+### Visualización de algunas imágenes que conforman la base de datos
 
-Se muestran algunas imágenes aleatorias de los respectivos mapas de cobertura para 1, 2 y 3 puntos de acceso, así como los mapas de celdas para 2 y 3 puntos de acceso. En los mapas de cobertura se puede observar la distribución de los escenarios a nivel de las paredes que los conforman, así como las posiciones de los puntos de acceso para cada caso.
+Se muestran algunas imágenes aleatorias de los respectivos mapas de cobertura para 1, 2 y 3 puntos de acceso, así como los mapas de celdas para 2 y 3 puntos de acceso. En los mapas de cobertura se puede observar la distribución de los escenarios a nivel de las paredes que los conforman, así como las posiciones de los puntos de acceso para cada caso. Así mismo, en los mapas de celdas, se muestra el área de funcionamiento de cada uno, respectivamente.
 
-[![Mapa de cobertura con 1 punto de acceso.](https://drive.google.com/file/d/1Xm6OWb1VljDEYVkpDGqllIgHxGmnO_Kr/view?usp=sharing "Mapa de cobertura con 1 punto de acceso.")](https://drive.google.com/file/d/1Xm6OWb1VljDEYVkpDGqllIgHxGmnO_Kr/view?usp=sharing "Mapa de cobertura con 1 punto de acceso.")
+![Mapa de cobertura con 1 punto de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Cobertura_1.png)
+![Mapa de cobertura con 2 punto2 de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Cobertura_2.png)
+![Mapa de cobertura con 3 puntos de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Cobertura_3.png)
 
+![Mapa de celdas con 2 puntos de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Celdas_2.png) 
+![Mapa de celdas con 3 puntos de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Celdas_3.png)
+
+## Estimador de los mapas de cobertura y de celdas
+
+Se realizó la implementación de múltiples arquitecturas [UNet](https://arxiv.org/abs/1505.04597) utilizando el framework Keras. Los [códigos]() disponibles fueron adecuados para generar modelos capaces de adaptarse a cada caso, es decir, de realizar procesos de entrenamiento para 1, 2 y 3 puntos de acceso en los casos de mapas de cobertura y para 2 y 3 puntos de acceso para los mapas de celdas.
+
+### 1. Modelo de predicción para mapas de cobertura con 1 punto de acceso:
+
+### 2. Modelo de predicción para mapas de cobertura con 2 puntos de acceso:
+
+### 3. Modelo de predicción para mapas de cobertura con 3 puntos de acceso:
+
+### 4. Modelo de predicción para mapas de celdas con 2 puntos de acceso:
+
+### 5. Modelo de predicción para mapas de celdas con 3 puntos de acceso:
+
+Es importante notar, que para los modelos obtenidos, estos alcanzan un alto grado de generalización para estimar cada estructura de manera adecuada.
 
