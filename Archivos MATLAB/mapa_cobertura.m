@@ -23,7 +23,7 @@ close all
 % Ruta en la que se encuentran las posiciones de los transmisores que se desea analizar
 % (Es importante mencionar que para cada caso de 1, 2 y 3 transmisores, es necesario generar 
 % carpetas de almacenamiento distintas para cada resultado.)
-ruta = ""
+ruta = "" % #######################################################
 load(ruta)
 
 % Cantidad de imagenes a crear en el DataSet.
@@ -45,7 +45,7 @@ formato = '.png';
 % Cargar el plano inicial:
 % (La ruta se debe cambiar según el caso.)
 % Ruta en la que se encuentra la carpeta que almacena las imágenes de los escenarios (diseños iniciales, paredes en negro y demás en blanco):
-ruta = ""
+ruta = "" % #######################################################
 plain1 = imread(ruta + string(Esc_act) + '.JPG'); % Plano inicial
 
 plain(:, :, 1) = plain1;
@@ -145,7 +145,7 @@ while contador_im <= imagenes && Esc_act <= cant_esc
 
     % Se guarda la imagen en RGB:
     % Ruta de la carpeta en la que se desean almacenar los mapas de cobertura cálculados:
-    ruta = ""
+    ruta = "" % #######################################################
     fileName = ruta + string(Esc_act) + '_' + string(contador_im) + string(formato);
     
     Fig = getframe(gca);
@@ -154,7 +154,7 @@ while contador_im <= imagenes && Esc_act <= cant_esc
     % Colocación de las paredes en el escenario:
     % Primero se lee la imagen y se binariza
     % Ruta de la carpeta en la que se tienen almacenados los mapas de cobertura:
-    % ruta = ""
+    ruta = "" % #######################################################
     sim_gray_bef = imread(ruta + string(Esc_act) + '_' + string(contador_im) + string(formato));
 
     % Se binariza la imagen:
@@ -169,7 +169,7 @@ while contador_im <= imagenes && Esc_act <= cant_esc
     end
 
     % Ruta de la carpeta en la que se desea guardar la nueva imagen con profundidad de 8 bits:
-    ruta = ""
+    ruta = "" % #######################################################
     fileName = ruta + string(Esc_act) + '_' + string(contador_im) + string(formato);
     
     imwrite(sim_gray,  fileName);
@@ -187,7 +187,7 @@ while contador_im <= imagenes && Esc_act <= cant_esc
 
     % Se guarda la imagen en RGB:
     % Ruta de la carpeta en la que se desea guardar la imagen:
-    ruta = ""
+    ruta = "" % #######################################################
     fileName = ruta + string(Esc_act) + '_' + string(contador_im) + string(formato);
     Fig = getframe(gca);
     imwrite(Fig.cdata,  fileName);
@@ -195,14 +195,14 @@ while contador_im <= imagenes && Esc_act <= cant_esc
     % Colocación de las paredes en el escenario con las celdas:
     % Primero se lee la imagen y se binariza
     % Ruta de la carpeta en la que se almacenan las imágenes de los mapas de celdas calculados
-    ruta = ""
+    ruta = "" % #######################################################
     celdas_gray_rgb = imread(ruta + string(Esc_act) + '_' + string(contador_im) + string(formato));
 
     celdas_gray = im2gray(celdas_gray_rgb);
     
     % Se guarda la imagen con una profundidad de 8 bits:
     % Ruta de la carpeta en la que se desean guardar las nuevas imágenes:
-    ruta = ""
+    ruta = "" % #######################################################
     fileName = ruta + string(Esc_act) + '_' + string(contador_im) + string(formato);
 
     imwrite(celdas_gray,  fileName);
@@ -231,7 +231,7 @@ while contador_im <= imagenes && Esc_act <= cant_esc
         Esc_act = Esc_act + 1;
         if Esc_act <= cant_esc   
             % Ruta de la carpeta en la que se encuentran almacenadas las imágenes de los escenarios (diseñados inicialmente):
-            ruta = ""
+            ruta = "" % #######################################################
             plain1 = imread(ruta + string(Esc_act) + '.JPG');
             plain(:, :, 1) = plain1;
             plain(:, :, 2) = plain1;
@@ -243,5 +243,5 @@ end
 close all 
 
 % Ruta en la que se desea almacenar la matriz de los tiempos de ejecución:
-ruta = ""
+ruta = "" % #######################################################
 save(ruta, 'time_pot');
