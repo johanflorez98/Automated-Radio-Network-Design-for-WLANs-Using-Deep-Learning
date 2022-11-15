@@ -7,7 +7,7 @@ Un punto de referencia importante en el estado del arte fue [RadioUNet](https://
 
 Una gran díficultad inicial para el incio de la investigación, fue la falta de datos, en este caso, escenarios, mapas de cobertura y de celdas de interiores, para el entrenamiento de la estructura [UNet](https://arxiv.org/abs/1505.04597). Por lo que fue necesario realizar la creación de una base de datos adecuada, que diera lugar a los respectivos entrenamientos. Dichos mapas de cobertura, se generaron utilizando el modelo [WiFi IEEE](https://mentor.ieee.org/802.11/dcn/03/11-03-0940-04-000n-tgn-channel-models.doc). Dicha implementación se realizó en el software MATLAB y se dejan a disposición los [códigos](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/tree/main/Archivos%20MATLAB).
 
-Es por lo anterior, que la presente investigación, aporta una [base datos](https://drive.google.com/drive/folders/17ann1zRG3JtVQTSib1voEYGlmOFDSOTR?usp=sharing) que puede ser usada para el entrenamiento de múltiples arquitecturas de Deep Learning y con ella se podrían llevar a cabo investigaciones futuras de problemas similares.
+Es por lo anterior, que la presente investigación, aporta una [base datos](https://drive.google.com/file/d/19l6GrUhRt5eMBTMf8on6Jbc2Pyxx7iQC/view?usp=sharing) que puede ser usada para el entrenamiento de múltiples arquitecturas de Deep Learning y con ella se podrían llevar a cabo investigaciones futuras de problemas similares.
 
 En la siguiente tabla se específica la estructura de la base de datos creada.
 
