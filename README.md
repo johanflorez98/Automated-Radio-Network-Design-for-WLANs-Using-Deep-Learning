@@ -46,17 +46,90 @@ Se muestran algunas imágenes aleatorias de los respectivos mapas de cobertura p
 
 ## Estimador de los mapas de cobertura y de celdas
 
-Se realizó la implementación de múltiples arquitecturas [UNet](https://arxiv.org/abs/1505.04597) utilizando el framework Keras. Los [códigos]() disponibles fueron adecuados para generar modelos capaces de adaptarse a cada caso, es decir, de realizar procesos de entrenamiento para 1, 2 y 3 puntos de acceso en los casos de mapas de cobertura y para 2 y 3 puntos de acceso para los mapas de celdas.
+Se realizó la implementación de múltiples arquitecturas [UNet](https://arxiv.org/abs/1505.04597) utilizando el framework Keras. Los [códigos](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/tree/main/C%C3%B3digos) disponibles fueron adecuados para generar modelos capaces de adaptarse a cada caso, es decir, de realizar procesos de entrenamiento para 1, 2 y 3 puntos de acceso en los casos de mapas de cobertura y para 2 y 3 puntos de acceso para los mapas de celdas.
 
 ### 1. Modelo de predicción para mapas de cobertura con 1 punto de acceso:
 
+Una vez entrenado un modelo para predicción del mapa de cobertura con un punto de acceso, se muestra en la siguiente imagen la variación de la función de pérdida:
+
+![Variación de la función de pérdida durante el entrenamiento.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Loss_maps_1.PNG) 
+
+Lo anterior permite observar que se alcanza un valor de la función de pérdida muy cercano a cero, lo que quiere decir que el modelo se ajusta de forma correcta a la estimación esperada.
+
+Las siguientes imágenes muestran la evaluación del modelo, indicando la entrada (se ignoran las posiciones de los puntos de acceso al ser poco observable en la imagen, se considera solo el plano del escenario) la salida esperada y la obtenida:
+
+![Evaluación del modelo para la estimación de mapas de cobertura con un punto de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/eval_maps_1.png) 
+
+Se observa que el modelo se ajusta de forma adecuada a la estimación del mapa de cobertura.
+
 ### 2. Modelo de predicción para mapas de cobertura con 2 puntos de acceso:
+
+Una vez entrenado un modelo para predicción del mapa de cobertura con dos puntos de acceso, se muestra en la siguiente imagen la variación de la función de pérdida:
+
+![Variación de la función de pérdida durante el entrenamiento.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Loss_maps_2.jpg) 
+
+Lo anterior permite observar que se alcanza un valor de la función de pérdida muy cercano a cero, lo que quiere decir que el modelo se ajusta de forma correcta a la estimación esperada.
+
+Las siguientes imágenes muestran la evaluación del modelo, indicando la entrada (se ignoran las posiciones de los puntos de acceso al ser poco observable en la imagen, se considera solo el plano del escenario) la salida esperada y la obtenida:
+
+![Evaluación del modelo para la estimación de mapas de cobertura con dos puntos de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/eval_maps_2.png) 
+
+Se observa que el modelo se ajusta de forma adecuada a la estimación del mapa de cobertura.
 
 ### 3. Modelo de predicción para mapas de cobertura con 3 puntos de acceso:
 
+Una vez entrenado un modelo para predicción del mapa de cobertura con tres puntos de acceso, se muestra en la siguiente imagen la variación de la función de pérdida:
+
+![Variación de la función de pérdida durante el entrenamiento.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Loss_maps_3.jpg) 
+
+Lo anterior permite observar que se alcanza un valor de la función de pérdida muy cercano a cero, lo que quiere decir que el modelo se ajusta de forma correcta a la estimación esperada.
+
+Las siguientes imágenes muestran la evaluación del modelo, indicando la entrada (se ignoran las posiciones de los puntos de acceso al ser poco observable en la imagen, se considera solo el plano del escenario) la salida esperada y la obtenida:
+
+![Evaluación del modelo para la estimación de mapas de cobertura con tres puntos de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/eval_maps_3.png) 
+
+Se observa que el modelo se ajusta de forma adecuada a la estimación del mapa de cobertura.
+
 ### 4. Modelo de predicción para mapas de celdas con 2 puntos de acceso:
+
+Una vez entrenado un modelo para predicción del mapa de celdas con dos puntos de acceso, se muestra en la siguiente imagen la variación de la función de pérdida:
+
+![Variación de la función de pérdida durante el entrenamiento.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Loss_cells_2.jpg) 
+
+Lo anterior permite observar que se alcanza un valor de la función de pérdida muy cercano a cero, lo que quiere decir que el modelo se ajusta de forma correcta a la estimación esperada.
+
+En el mismo sentido, en la siguiente imagen se puede observar el accuraccy alcanzado (esta medida se toma ya que es un problema de clasificación de píxel a píxel):
+
+![Accuraccy durante el entrenamiento.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/acc_cells_2.png) 
+
+Se obtuvo un accuraccy adecuado para la clasificación de los píxeles.
+
+Las siguientes imágenes muestran la evaluación del modelo, indicando la entrada (se ignoran las posiciones de los puntos de acceso al ser poco observable en la imagen, se considera solo el plano del escenario) la salida esperada y la obtenida:
+
+![Evaluación del modelo para la estimación de mapas de celdas con dos puntos de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/eval_cells_2.png) 
+
+Se observa que el modelo se ajusta de forma adecuada a la estimación del mapa de celdas.
 
 ### 5. Modelo de predicción para mapas de celdas con 3 puntos de acceso:
 
-Es importante notar, que para los modelos obtenidos, estos alcanzan un alto grado de generalización para estimar cada estructura de manera adecuada.
+Una vez entrenado un modelo para predicción del mapa de celdas con tres puntos de acceso, se muestra en la siguiente imagen la variación de la función de pérdida:
+
+![Variación de la función de pérdida durante el entrenamiento.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Loss_cells_3.jpg) 
+
+Lo anterior permite observar que se alcanza un valor de la función de pérdida muy cercano a cero, lo que quiere decir que el modelo se ajusta de forma correcta a la estimación esperada.
+
+En el mismo sentido, en la siguiente imagen se puede observar el accuraccy alcanzado (esta medida se toma ya que es un problema de clasificación de píxel a píxel):
+
+![Accuraccy durante el entrenamiento.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/acc_cells_3.png) 
+
+Se obtuvo un accuraccy adecuado para la clasificación de los píxeles.
+
+Las siguientes imágenes muestran la evaluación del modelo, indicando la entrada (se ignoran las posiciones de los puntos de acceso al ser poco observable en la imagen, se considera solo el plano del escenario) la salida esperada y la obtenida:
+
+![Evaluación del modelo para la estimación de mapas de celdas con tres puntos de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/eval_cells_3.png) 
+
+Se observa que el modelo se ajusta de forma adecuada a la estimación del mapa de celdas.
+
+
+Es importante notar, que para los modelos obtenidos, estos alcanzan un alto grado de generalización para estimar cada estructura de manera adecuada. De la misma manera a pesar de las variaciones las métricas utilizadas, se guardó para cada caso el mejor modelo.
 
