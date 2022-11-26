@@ -11,17 +11,17 @@ Es por lo anterior, que la presente investigación, aporta una [base datos](http
 
 En la siguiente tabla se específica la estructura de la base de datos creada.
 
-| Datos                         | Cantidad                                |
-| ----------------------------  | ---------------------------------------:|
-| Escenarios                    | 10                                      |
-| Puntos de acceso              | 1, 2 y 3                                |
-| Simulaciones x Escenario      | 1000                                    |
-| ----------------------------  | --------------------------------------- |
-| Puntos de acceso              | (1000 + 2000 + 3000) x 10 = 60000       |
-| Mapas de cobertura            | (1000 + 1000 + 1000) x 10 = 30000       |
-| Mapas de celdas               | (1000 + 1000) x 10 = 20000              |
-| ----------------------------  | --------------------------------------- |
-| Total                         | 110000                                  |
+| Datos                         | Cantidad                                              |
+| ----------------------------  | -----------------------------------------------------:|
+| Escenarios                    | 10                                                    |
+| Puntos de acceso              | 1, 2, 3, 4 y 5                                        |
+| Simulaciones x Escenario      | 1000                                                  |
+| ----------------------------  | ----------------------------------------------------- |
+| Puntos de acceso              | (1000 + 2000 + 3000 + 4000 + 5000) x 10 = 150000      |
+| Mapas de cobertura            | (1000 + 1000 + 1000 + 1000 + 1000) x 10 = 50000       |
+| Mapas de celdas               | (1000 + 1000 + 1000 + 1000) x 10 = 40000              |
+| ----------------------------  | ----------------------------------------------------- |
+| Total                         | 240000                                                |
 
 Se establecieron 10 contrucciones de 20 m x 20 m, las cuales representan algunas de las distribuciones de escenarios de oficinas más comúnes. Para cada uno de los escenarios, se establecieron diferentes estructuras de WLAN conformadas por 1, 2 y 3 puntos de acceso, de las cuales para cada caso, se definieron 1000 posiciones aleatorias por cada construcción.
 
