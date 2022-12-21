@@ -1,4 +1,5 @@
 # Automated Radio Network Design for WLANs Using Deep-Learning.
+
 En esta investigación, se presenta la arquitectura de Deep Learning [UNet](https://arxiv.org/abs/1505.04597) para la estimación rápida de mapas de radio en escenarios interiores. Esta arquitectura fue implementada para estructuras WLAN conformadas por 1, 2, 3, 4 y 5 puntos de acceso, la cual tiene la capacidad de realizar estimaciones de los mapas de cobertura, de forma similar que un simulador físico, pero de forma rápida. De la misma manera, tiene la capacidad de estimar los respectivos mapas de área de cobertura, para las estructuras descritas.
 
 Un punto de referencia importante en el estado del arte fue [RadioUNet](https://github.com/RonLevie/RadioUNet), que es una aplicación para estimar la pérdida de trayectoria de propagación en escenarios exteriores.
@@ -40,13 +41,13 @@ Se muestran algunas imágenes aleatorias de los respectivos mapas de cobertura p
 ![Mapa de cobertura con 1 punto de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Cobertura_1.png)
 ![Mapa de cobertura con 2 punto2 de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Cobertura_2.png)
 ![Mapa de cobertura con 3 puntos de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Cobertura_3.png)
-![Mapa de cobertura con 4 puntos de acceso.]()
-![Mapa de cobertura con 5 puntos de acceso.]()
+![Mapa de cobertura con 4 puntos de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Cobertura_4.png)
+![Mapa de cobertura con 5 puntos de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Cobertura_5.png)
 
 ![Mapa de celdas con 2 puntos de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Celdas_2.png) 
 ![Mapa de celdas con 3 puntos de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Celdas_3.png)
-![Mapa de celdas con 4 puntos de acceso.]() 
-![Mapa de celdas con 5 puntos de acceso.]()
+![Mapa de celdas con 4 puntos de acceso.](ttps://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Celdas_4.png) 
+![Mapa de celdas con 5 puntos de acceso.](ttps://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Celdas_5.png)
 
 ## Estimador de los mapas de cobertura y de áreas de cobertura
 
