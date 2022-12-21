@@ -46,8 +46,8 @@ Se muestran algunas imágenes aleatorias de los respectivos mapas de cobertura p
 
 ![Mapa de celdas con 2 puntos de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Celdas_2.png) 
 ![Mapa de celdas con 3 puntos de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Celdas_3.png)
-![Mapa de celdas con 4 puntos de acceso.](ttps://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Celdas_4.png) 
-![Mapa de celdas con 5 puntos de acceso.](ttps://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Celdas_5.png)
+![Mapa de celdas con 4 puntos de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Celdas_4.png) 
+![Mapa de celdas con 5 puntos de acceso.](https://github.com/johanflorez98/Estimacion-Rapida-de-Mapas-de-Radio-en-Escenarios-Interiores-usando-Deep-Learning/blob/main/Imagenes%20Readme/Celdas_5.png)
 
 ## Estimador de los mapas de cobertura y de áreas de cobertura
 
