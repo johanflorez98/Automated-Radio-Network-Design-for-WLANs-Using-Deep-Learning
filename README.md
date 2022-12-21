@@ -183,7 +183,7 @@ Las siguientes imágenes muestran la evaluación del modelo, indicando la entrad
 
 Se observa que el modelo se ajusta de forma adecuada a la estimación del mapa de área de cobertura.
 
-### 9. Modelo de predicción para mapas de área de cobertura con cinco puntos de acceso:
+### 9. Modelo de predicción para mapas de área de cobertura con 5 puntos de acceso:
 
 Una vez entrenado un modelo para predicción del mapa de área de cobertura con cinco puntos de acceso, se muestra en la siguiente imagen la variación de la función de pérdida:
 
