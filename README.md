@@ -99,13 +99,13 @@ Se observa que el modelo se ajusta de forma adecuada a la estimación del mapa d
 
 Una vez entrenado un modelo para predicción del mapa de cobertura con cuatro puntos de acceso, se muestra en la siguiente imagen la variación de la función de pérdida:
 
-![Variación de la función de pérdida durante el entrenamiento.]() 
+![Variación de la función de pérdida durante el entrenamiento.](https://github.com/johanflorez98/Automated-Radio-Network-Design-for-WLANs-Using-Deep-Learning/blob/main/Imagenes%20Readme/Loss_maps_4.jpg) 
 
 Lo anterior permite observar que se alcanza un valor de la función de pérdida muy cercano a cero, lo que quiere decir que el modelo se ajusta de forma correcta a la estimación esperada.
 
 Las siguientes imágenes muestran la evaluación del modelo, indicando la entrada (se ignoran las posiciones de los puntos de acceso al ser poco observables en la imagen, se considera solo el plano del escenario) la salida esperada y la obtenida:
 
-![Evaluación del modelo para la estimación de mapas de cobertura con cuatro puntos de acceso.]() 
+![Evaluación del modelo para la estimación de mapas de cobertura con cuatro puntos de acceso.](https://github.com/johanflorez98/Automated-Radio-Network-Design-for-WLANs-Using-Deep-Learning/blob/main/Imagenes%20Readme/eval_maps_4.png) 
 
 Se observa que el modelo se ajusta de forma adecuada a la estimación del mapa de cobertura.
 
@@ -113,13 +113,13 @@ Se observa que el modelo se ajusta de forma adecuada a la estimación del mapa d
 
 Una vez entrenado un modelo para predicción del mapa de cobertura con cinco puntos de acceso, se muestra en la siguiente imagen la variación de la función de pérdida:
 
-![Variación de la función de pérdida durante el entrenamiento.]() 
+![Variación de la función de pérdida durante el entrenamiento.](https://github.com/johanflorez98/Automated-Radio-Network-Design-for-WLANs-Using-Deep-Learning/blob/main/Imagenes%20Readme/Loss_maps_5.jpg) 
 
 Lo anterior permite observar que se alcanza un valor de la función de pérdida muy cercano a cero, lo que quiere decir que el modelo se ajusta de forma correcta a la estimación esperada.
 
 Las siguientes imágenes muestran la evaluación del modelo, indicando la entrada (se ignoran las posiciones de los puntos de acceso al ser poco observables en la imagen, se considera solo el plano del escenario) la salida esperada y la obtenida:
 
-![Evaluación del modelo para la estimación de mapas de cobertura con cinco puntos de acceso.]() 
+![Evaluación del modelo para la estimación de mapas de cobertura con cinco puntos de acceso.](https://github.com/johanflorez98/Automated-Radio-Network-Design-for-WLANs-Using-Deep-Learning/blob/main/Imagenes%20Readme/eval_maps_5.png) 
 
 Se observa que el modelo se ajusta de forma adecuada a la estimación del mapa de cobertura.
 
@@ -167,19 +167,19 @@ Se observa que el modelo se ajusta de forma adecuada a la estimación del mapa d
 
 Una vez entrenado un modelo para predicción del mapa de área de cobertura con cuatro puntos de acceso, se muestra en la siguiente imagen la variación de la función de pérdida:
 
-![Variación de la función de pérdida durante el entrenamiento.]() 
+![Variación de la función de pérdida durante el entrenamiento.](https://github.com/johanflorez98/Automated-Radio-Network-Design-for-WLANs-Using-Deep-Learning/blob/main/Imagenes%20Readme/Loss_cells_4.jpg) 
 
 Lo anterior permite observar que se alcanza un valor de la función de pérdida muy cercano a cero, lo que quiere decir que el modelo se ajusta de forma correcta a la estimación esperada.
 
 En el mismo sentido, en la siguiente imagen se puede observar el accuraccy alcanzado (esta medida se toma ya que es un problema de clasificación de píxel a píxel):
 
-![Accuraccy durante el entrenamiento.]() 
+![Accuraccy durante el entrenamiento.](https://github.com/johanflorez98/Automated-Radio-Network-Design-for-WLANs-Using-Deep-Learning/blob/main/Imagenes%20Readme/acc_cells_4.png) 
 
 Se obtuvo un accuraccy adecuado para la clasificación de los píxeles.
 
 Las siguientes imágenes muestran la evaluación del modelo, indicando la entrada (se ignoran las posiciones de los puntos de acceso al ser poco observables en la imagen, se considera solo el plano del escenario) la salida esperada y la obtenida:
 
-![Evaluación del modelo para la estimación de mapas de área de cobertura con cuatro puntos de acceso.]() 
+![Evaluación del modelo para la estimación de mapas de área de cobertura con cuatro puntos de acceso.](https://github.com/johanflorez98/Automated-Radio-Network-Design-for-WLANs-Using-Deep-Learning/blob/main/Imagenes%20Readme/eval_cells_4.png) 
 
 Se observa que el modelo se ajusta de forma adecuada a la estimación del mapa de área de cobertura.
 
@@ -187,22 +187,22 @@ Se observa que el modelo se ajusta de forma adecuada a la estimación del mapa d
 
 Una vez entrenado un modelo para predicción del mapa de área de cobertura con cinco puntos de acceso, se muestra en la siguiente imagen la variación de la función de pérdida:
 
-![Variación de la función de pérdida durante el entrenamiento.]() 
+![Variación de la función de pérdida durante el entrenamiento.](https://github.com/johanflorez98/Automated-Radio-Network-Design-for-WLANs-Using-Deep-Learning/blob/main/Imagenes%20Readme/Loss_cells_5.jpg) 
 
 Lo anterior permite observar que se alcanza un valor de la función de pérdida muy cercano a cero, lo que quiere decir que el modelo se ajusta de forma correcta a la estimación esperada.
 
 En el mismo sentido, en la siguiente imagen se puede observar el accuraccy alcanzado (esta medida se toma ya que es un problema de clasificación de píxel a píxel):
 
-![Accuraccy durante el entrenamiento.]() 
+![Accuraccy durante el entrenamiento.](https://github.com/johanflorez98/Automated-Radio-Network-Design-for-WLANs-Using-Deep-Learning/blob/main/Imagenes%20Readme/acc_cells_5.png) 
 
 Se obtuvo un accuraccy adecuado para la clasificación de los píxeles.
 
 Las siguientes imágenes muestran la evaluación del modelo, indicando la entrada (se ignoran las posiciones de los puntos de acceso al ser poco observables en la imagen, se considera solo el plano del escenario) la salida esperada y la obtenida:
 
-![Evaluación del modelo para la estimación de mapas de área de cobertura con cinco puntos de acceso.]() 
+![Evaluación del modelo para la estimación de mapas de área de cobertura con cinco puntos de acceso.](https://github.com/johanflorez98/Automated-Radio-Network-Design-for-WLANs-Using-Deep-Learning/blob/main/Imagenes%20Readme/eval_cells_5.png) 
 
 Se observa que el modelo se ajusta de forma adecuada a la estimación del mapa de área de cobertura.
 
 
-Es importante notar, que para los modelos obtenidos, estos alcanzan un alto grado de generalización para estimar cada estructura de manera adecuada. De la misma manera a pesar de las variaciones las métricas utilizadas, se guardó para cada caso el mejor modelo para el total de las épocas empleadas.
+Es importante notar, que para los [modelos](https://drive.google.com/file/d/1jcsnVLTT64W6b-K1b75aJc_Ne9URiB6C/view?usp=sharing) obtenidos, estos alcanzan un alto grado de generalización para estimar cada estructura de manera adecuada. De la misma manera a pesar de las variaciones las métricas utilizadas, se guardó para cada caso el mejor modelo para el total de las épocas empleadas.
 
